@@ -1,6 +1,14 @@
-# pymongo-api
+# Проектная работа 2
+
+draw.io схема в файле `diagram.drawio`
 
 ## Как запустить
+
+Перейти в папку `sharding-repl-cache`
+
+```shell
+cd ./sharding-repl-cache
+```
 
 Запускаем mongodb и приложение
 
@@ -8,28 +16,24 @@
 docker compose up -d
 ```
 
-Заполняем mongodb данными
+Инициализация кластера mongodb:
+
+
+Mac/Linux:
 
 ```shell
-./scripts/mongo-init.sh
+./init_mongo_cluster.sh
+```
+
+Windows:
+```powershell
+.\init_mongo_cluster.ps1
 ```
 
 ## Как проверить
 
-### Если вы запускаете проект на локальной машине
-
 Откройте в браузере http://localhost:8080
-
-### Если вы запускаете проект на предоставленной виртуальной машине
-
-Узнать белый ip виртуальной машины
-
-```shell
-curl --silent http://ifconfig.me
-```
-
-Откройте в браузере http://<ip виртуальной машины>:8080
 
 ## Доступные эндпоинты
 
-Список доступных эндпоинтов, swagger http://<ip виртуальной машины>:8080/docs
+Список доступных эндпоинтов, swagger http://localhost:8080/docs
