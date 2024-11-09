@@ -1,14 +1,6 @@
-# Проектная работа 2
-
-draw.io схема в файле `diagram.drawio`
+# pymongo-api
 
 ## Как запустить
-
-Перейти в папку `sharding-repl-cache`
-
-```shell
-cd ./sharding-repl-cache
-```
 
 Запускаем mongodb и приложение
 
@@ -16,7 +8,7 @@ cd ./sharding-repl-cache
 docker compose up -d
 ```
 
-Инициализация кластера mongodb:
+Инициализация кластера:
 
 
 Mac/Linux:
@@ -31,6 +23,8 @@ Windows:
 ```
 
 ## Как проверить
+
+### Если вы запускаете проект на локальной машине
 
 Откройте в браузере http://localhost:8080
 
